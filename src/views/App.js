@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import Counter from './containers/Counter';
-import ArticleList from './containers/ArticleList';
+import Counter from './containers/counter';
+import Articles from './containers/articles';
 import store from './../state/configureStore';
 
 class App extends React.Component {
@@ -10,7 +10,7 @@ class App extends React.Component {
       <Provider store={store}>
         <div>
           <Counter />
-          <ArticleList />
+          <Articles />
         </div>
       </Provider>
     )
