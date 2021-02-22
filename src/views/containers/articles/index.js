@@ -2,6 +2,7 @@ import React, { useEffect, useCallback } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actions } from '../../../state/articles';
+import './style.scss';
 
 const Articles = ({ actions, data }) => {
   useEffect(() => {
