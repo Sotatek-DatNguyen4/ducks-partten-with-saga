@@ -1,9 +1,9 @@
 import * as types from './types';
 
-export default function (
+const counter = (
   state = 0, 
   action
-) {
+) => {
   switch (action.type) {
     case types.INCREMENT:
       return state + 1;
@@ -14,4 +14,6 @@ export default function (
     default:
       return state;
   }
-}
+};
+
+export default counter;
