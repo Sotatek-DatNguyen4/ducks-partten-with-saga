@@ -1,7 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import Counter from './containers/counter';
-import Articles from './containers/articles';
+import createRoutes from './router';
 import store from './../state/configureStore';
 
 class App extends React.Component {
@@ -9,8 +8,7 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <div>
-          <Counter />
-          <Articles />
+          { createRoutes() }
         </div>
       </Provider>
     )
